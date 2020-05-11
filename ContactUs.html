@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Contact Us</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" media="all" href="contactusCSS.css" />
+<script src="js_contactus.js"></script>
+</head>
+
+
+
+<body>
+	<div class="main row container">
+	  <div class="mainleft col">
+		<p id="contactus" class="contactus" align="center">Contact Us</p>
+		<form id="formContactUs" class="formLogin" method="post">
+		  <input id="name" class="name" type="text" align="center" placeholder="Name">
+		  <input id="email" class="email" type="email" align="center" placeholder="Email">
+		  <input id="list" class="list" name="list1" list="browsers" placeholder="Contact Us Concerning:">
+			  <datalist id="browsers">
+				<option value="Help">
+				<option value="Question">
+			  </datalist>
+			<textarea rows="4" cols="50" id="textarea" class="textarea" form="usrform" placeholder="Subject"></textarea>
+		  <a class="submit" align="center" href="#" onclick="#">Submit</a>											<!-- a tag - defines a hyperlink, which is used to link from one page to another.-->
+		</form>
+	   </div>
+	   <div class="col">
+		   <div class="mainrighttop">
+		   <p class="support" align="center">Need 24/7 Support</p>
+		   <a class="submit2" align="center" href="mailto:someone@example.com?Subject=Hello%20again" onclick="#">Contact Support</a> <!-- Spaces between words should be replaced by %20 to ensure that the browser will display the text properly.-->
+		   </div>
+		   <div class="mainrightbottom">
+		   <p class="space" align="center">Call Sales Now</p>
+		   <p class="space2" align="center">1 800 666</p>
+		   <p class="space" align="center">Sales Hours</p>
+		   <p class="space2" align="center">7am - 7pm GMT</p>
+		   <p class="space" align="center">Sales Contact Info</p>
+		   <p class="space2" align="center">art@gmail.com</p>
+		   <p class="space" align="center">MAiling Address</p>
+		   <p class="space2" align="center">myCompanyName<br>myAddress<br>some place 5432<br>Israel</p>
+		   </div>
+		</div>
+     </div>
+</body>
+</html>

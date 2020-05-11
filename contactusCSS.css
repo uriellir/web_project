@@ -1,0 +1,158 @@
+	body {
+		background-color: #F3EBF6;
+		font-family: 'Ubuntu', sans-serif;
+	 }
+	 
+	body::after{														/* :after selector - inserts background photo after the content of the body */
+		content: "";
+		background-image: url("/Photos/background.jpg");
+		background-size: cover;
+		opacity: 0.9;
+		top: 0;															/*?*/
+		left: 0;														/*?*/
+		bottom: 0;														/*?*/
+		right: 0;														/*?*/
+		position: absolute;												/*?*/
+		z-index: -1;													/* Because the image has a z-index of -1, it will be placed behind the text. */
+	}   
+	
+		.main {
+			width: 780px;
+			height: 450px;
+			margin: 7em auto;
+			border-radius: 1.5em;
+			box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+		} 
+	
+		.mainleft {
+			background-color: #FFFFFF;
+			width: 400px;
+			height: 450px;
+			margin: 7em auto;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+			box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+			float:left;
+			transform: translateX(-5%) translateY(-25%);
+			bottom:70;
+		}
+		
+		.mainrighttop {
+			background-color: #FFFFFF;
+			width: 380px;
+			height: 110px;
+			margin: 7em auto;
+			border-top-right-radius: 20px;
+			box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+			float:right;
+			transform: translateX(8%) translateY(-102%);
+		}
+		
+		.mainrightbottom {
+			background-color: #FFFFFF;
+			width: 380px;
+			height: 320px;
+			margin: 7em auto;
+			border-bottom-right-radius: 20px;
+			box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+			float:right;
+			transform: translateX(8%) translateY(-99%);
+		}
+		
+		.space {
+		color: #CF3AFF;
+		font-weight: 900;		/*Bold text.*/
+		margin-bottom: -10px; 	/* Space between paragraphs. */
+		}
+		.space2 {
+		margin-bottom: 15px; 	/* Space between paragraphs. */
+		}
+		
+		.contactus {
+			padding-top: 20px;
+			color: #8C55AA;
+			font-family: 'Ubuntu', sans-serif;
+			font-weight: bold;
+			font-size: 23px;
+		}
+		
+		.support {
+			color: #8C55AA;
+			font-family: 'Ubuntu', sans-serif;
+			font-weight: bold;
+			font-size: 23px;
+		}
+		
+		.submit2{
+			cursor: pointer;											/*The cursor property specifies the mouse cursor to be displayed when pointing over an element - sign in button in this case*/
+			border-radius: 5em;
+			color: #fff;
+			background: linear-gradient(to right, #9C27B0, #E040FB);
+			border: 0;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			font-family: 'Ubuntu', sans-serif;
+			margin-left: 30%;
+			margin-top: 50%;
+			font-size: 13px;
+			box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+		}
+		
+		.name,.email,.list,.textarea{
+			width: 76%;
+			color: rgb(38, 50, 56);
+			font-weight: 700;
+			font-size: 14px;
+			letter-spacing: 1px;
+			background: rgba(136, 126, 126, 0.04);
+			padding: 10px 20px;
+			border: none;
+			border-radius: 20px;
+			outline: none;
+			box-sizing: border-box;
+			border: 2px solid rgba(0, 0, 0, 0.02);
+			margin-bottom: 50px;
+			margin-left: 46px;
+			text-align: center;
+			margin-bottom: 27px;
+			font-family: 'Ubuntu', sans-serif;
+		}
+		
+		form.formContactUs {
+			padding-top: 40px;
+		}
+	   
+		.name:focus,.email:focus,.list:focus,.textarea:focus {								/* :focus selector - is used to select the element that has focus - in this case darker the border when pressed*/
+			border: 2px solid rgba(0, 0, 0, 0.18);
+		}
+		
+		.submit {
+			cursor: pointer;											/*The cursor property specifies the mouse cursor to be displayed when pointing over an element - sign in button in this case*/
+			border-radius: 5em;
+			color: #fff;
+			background: linear-gradient(to right, #9C27B0, #E040FB);
+			border: 0;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			font-family: 'Ubuntu', sans-serif;
+			margin-left: 35%;
+			font-size: 13px;
+			box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+			
+		}
+		
+		a {
+			text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+			color: #E1BEE7;
+			text-decoration: none
+		}
+		
+		@media (max-width: 600px) {
+			.main {
+				border-radius: 0px;
+			}
+		}
